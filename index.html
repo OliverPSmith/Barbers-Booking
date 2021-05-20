@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <title>Barbers Booking</title>
+</head>
+<body>
+
+    <div id="main-container">
+        <div class="main-content">
+
+            <section class="header-section">
+                <img src="images/barberslogo.jpeg">
+                <h1 class="page-header">Your Local Barbers</h1>
+            </section>
+
+            <form class="booking-form" onsubmit="return false">
+
+                <h3 class="haircut-header section-header">Haircuts</h3>
+                <div class="haircuts-container">
+                    <ul class="haircuts">
+                        <label class="haircut-option">
+                            <span class="cut-title">REGULAR HAIRCUT</span>
+                            <span>30 Minutes</span>
+                            <span>£17</span>
+                            <input type="checkbox" class="the-checkbox" onchange="selectCutType(this)">
+                        </label>
+                        <label class="haircut-option">
+                            <span class="cut-title">LONG CUT</span>
+                            <span>30 Minutes</span>
+                            <span>£19</span>
+                            <input type="checkbox" class="the-checkbox" onchange="selectCutType(this)">
+                        </label>
+                        <label class="haircut-option">
+                            <span class="cut-title">BACK & SIDES</span>
+                            <span>15 Minutes</span>
+                            <span>£13</span>
+                            <input type="checkbox" class="the-checkbox" onchange="selectCutType(this)">
+                        </label>
+                        <label class="haircut-option">
+                            <span class="cut-title">BEARD TRIM</span>
+                            <span>15 Minutes</span>
+                            <span>£7</span>
+                            <input type="checkbox" class="the-checkbox" onchange="selectCutType(this)">
+                        </label>
+                        <label class="haircut-option">
+                            <span class="cut-title">WASH & HAIRCUT</span>
+                            <span>30 Minutes</span>
+                            <span>£20</span>
+                            <input type="checkbox" class="the-checkbox" onchange="selectCutType(this)">
+                        </label>
+
+                        <label class="haircut-option">
+                            <span class="cut-title">HAIRCUT & BEARD TRIM</span>
+                            <span>40 Minutes</span>
+                            <span>£25</span>
+                            <input type="checkbox" class="the-checkbox" onchange="selectCutType(this)">
+                        </label>
+                        <label class="haircut-option">
+                            <span class="cut-title">SKIN FADE</span>
+                            <span>30 Minutes</span>
+                            <span>£19</span>
+                            <input type="checkbox" class="the-checkbox" onchange="selectCutType(this)">
+                        </label>
+                        <label class="haircut-option">
+                            <span class="cut-title">GRADE CLIPPER</span>
+                            <span>15 Minutes</span>
+                            <span>£12</span>
+                            <input type="checkbox" class="the-checkbox" onchange="selectCutType(this)">
+                        </label>
+                        <label class="haircut-option">
+                            <span class="cut-title">BOYS 12 YEARS & YOUNGER</span>
+                            <span>25 Minutes</span>
+                            <span>£13</span>
+                            <input type="checkbox" class="the-checkbox" onchange="selectCutType(this)">
+                        </label>
+                        <label class="haircut-option">
+                            <span class="cut-title">OVER 65s HAIRCUT</span>
+                            <span>20 Minutes</span>
+                            <span>£19</span>
+                            <input type="checkbox" class="the-checkbox" onchange="selectCutType(this)">
+                        </label>
+                    </ul>
+                </div>
+
+                <h3 class="day-time-header section-header">Day & Time</h3>
+                <div class="day-time-container">
+                    <ul id="days">
+                        <label class="day">Monday
+                            <input type="checkbox" class="the-checkbox" onchange="selectDay(this)">
+                        </label>
+                        <label class="day">Tuesday
+                            <input type="checkbox" class="the-checkbox" onchange="selectDay(this)">
+                        </label>
+                        <label class="day">Wednesday
+                            <input type="checkbox" class="the-checkbox" onchange="selectDay(this)">
+                        </label>
+                        <label class="day">Thursday
+                            <input type="checkbox" class="the-checkbox" onchange="selectDay(this)">
+                        </label>
+                        <label class="day">Friday
+                            <input type="checkbox" class="the-checkbox" onchange="selectDay(this)">
+                        </label>
+                        <label class="day">Saturday
+                            <input type="checkbox" class="the-checkbox" onchange="selectDay(this)">
+                        </label>
+                        <label class="day">Sunday
+                            <input type="checkbox" class="the-checkbox" onchange="selectDay(this)">
+                        </label>
+                    </ul>
+
+                    <ul id="time-slots">
+                        <label class="slot">10:00 am
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">10:30 am
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">11:00 am
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">11:30 am
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">12:00 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">12:30 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">13:00 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">13:30 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">14:00 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">14:30 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">15:00 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">15:30 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">16:00 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">16:30 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">17:00 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                        <label class="slot">17:30 pm
+                            <input type="checkbox" class="the-checkbox" onchange="selectTime(this)">
+                        </label>
+                    </ul>
+
+                    <div class="staff-section">
+                        <label>Select Staff (optional)</label>
+                        <select name="staff-members" class="staff-members" id="staff-members">
+                            <option value="we" id="staff-anyone">Anyone</option>
+                            <option value="Tom" id="staff-barber1">Tom</option>
+                            <option value="Richard" id="staff-barber2">Richard</option>
+                            <option value="Harry" id="staff-barber3">Harry</option>
+                        </select>
+                    </ul>
+                </div>
+
+                <h3 class="your-details-header section-header">Your Details</h3>
+                <div class="your-details-container">
+                    
+                    <div id="details">
+                        <input type="text" placeholder="Name" id="name">
+                        <input type="email" placeholder="Email" id="email">
+                        <input type="number" placeholder="Mobile Number (optional)" id="number">
+                    </div>
+                    <div class="additional-notes">
+                        <p>If you have any special requests or additional requirements
+                            then please let us know by filling out the box below.
+                        </p>
+                        <textarea placeholder="Additional Notes (optional)"></textarea>
+                    </div>
+                    <div class="confirm-section">
+                        <button id="confirm-button">Confirm Order</button>
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+    <div class="modal-container">
+    <div id="modal">
+        <div class="modal-content">
+            <div class="order-summary">
+                <p id="summary-cut"></p>
+                <p>Thank you <span id="summary-name">*Your Name*</span>, if your booking above looks 
+                    correct then please confirm below and <span id="summary-barber">*We/Barber*</span> 
+                    will see you on <span id="summary-day">*Day*</span> at <span id="summary-time">*Time*</span>.</p>
+                <p>A confirmation email will be sent to <span id="summary-email">*Your Email*</span></p>
+                <p>See you soon!</p>
+                <button id="confirm-booking-button">Confirm Booking</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
